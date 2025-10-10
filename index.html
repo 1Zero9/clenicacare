@@ -22,13 +22,22 @@
     .logo img {
       width: 100%;
       height: auto;
+      animation: logoFloat 3s ease-in-out infinite;
     }
     .coming-soon {
       margin-top: 20px;
       font-family: Arial, sans-serif;
       font-size: 24px;
-      color: #333;
+      color: #1b4f73;
       letter-spacing: 2px;
+    }
+    @keyframes logoFloat {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
     }
     .version {
       position: fixed;
